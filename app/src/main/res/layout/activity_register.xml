@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@android:style/Theme.NoTitleBar"
+    tools:context=".account.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/reg_circle_image_view"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/pay" />
+
+
+    <!--<EditText-->
+    <!--android:id="@+id/register_name"-->
+    <!--android:layout_width="250dp"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_below="@+id/reg_circle_image_view"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--android:textColor="@color/black"-->
+    <!--android:hint="昵称"-->
+    <!--android:textSize="25px"-->
+    <!--android:textColorHint="@color/grey"/>-->
+    <EditText
+        android:id="@+id/register_phone"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/reg_circle_image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="手机"
+        android:inputType="phone"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="25px" />
+
+    <RelativeLayout
+        android:id="@+id/check_layout"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/register_phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/register_checknum"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:hint="验证码"
+            android:textColorHint="@color/grey"
+            android:textSize="25px" />
+
+        <Button
+            android:id="@+id/send_checknum"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/left_state_drawable"
+            android:includeFontPadding="false"
+            android:text="发送验证码"
+            android:textColor="#ffffff"
+            android:textSize="10sp" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/send_checknum"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="25dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="3dp"-->
+        <!--android:src="@mipmap/ic_send_checknum" />-->
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/check_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="登录密码"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="25px" />
+
+    <EditText
+        android:id="@+id/register_recheck"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/register_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="再次输入"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="25px" />
+
+    <EditText
+        android:id="@+id/register_paypassword"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/register_recheck"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="设置支付密码"
+        android:inputType="textPassword"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:textSize="25px" />
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/register_paypassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/left_state_drawable"
+        android:text="注册"
+        android:textColor="#ffffff" />
+
+
+</RelativeLayout>
